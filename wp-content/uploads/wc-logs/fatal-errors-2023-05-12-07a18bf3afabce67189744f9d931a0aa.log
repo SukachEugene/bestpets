@@ -1,0 +1,10 @@
+2023-05-12T09:59:42+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:16
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 16
+
+2023-05-12T12:43:49+00:00 CRITICAL syntax error, unexpected end of file, expecting "elseif" or "else" or "endif" in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\header.php on line 51
+

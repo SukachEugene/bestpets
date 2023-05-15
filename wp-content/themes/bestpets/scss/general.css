@@ -1,0 +1,151 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0 12px 0;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  background-color: none;
+  width: 100%;
+  padding: 28px 9.58vw 12px 9.58vw;
+  max-width: 81.26vw; }
+  header a {
+    font-family: "SVN-Gilroy Bold";
+    color: #003459;
+    transition: 1s; }
+    header a:hover {
+      color: #FFB775; }
+    header a img {
+      transition: 1s; }
+      header a img:hover {
+        transform: scale(1.1); }
+  header ul {
+    display: flex;
+    justify-content: space-between; }
+    header ul li {
+      padding: 0 20px; }
+  header div {
+    display: flex; }
+  header i {
+    color: #003459;
+    transition: color 1s; }
+    header i:hover {
+      color: #FFB775; }
+
+#searchform {
+  padding: 12px 18px;
+  background-color: white;
+  border-radius: 46px;
+  margin-right: 14px; }
+  #searchform input {
+    font-size: 14px;
+    border: none;
+    background-color: white; }
+  #searchform input:focus {
+    border: none;
+    outline: none; }
+  #searchform input:active {
+    border: none;
+    outline: none; }
+  #searchform input::placeholder {
+    font-size: 14px; }
+  #searchform #searchsubmit {
+    transition: 1s;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    margin-right: 4px; }
+    #searchform #searchsubmit:hover {
+      transform: scale(1.1); }
+
+.head-banner {
+  background-color: #FCEED5;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2; }
+  .head-banner .head-banner-content {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .head-banner .head-banner-content .head-banner-content-text {
+      width: 33%;
+      margin-left: 9.58vw; }
+      .head-banner .head-banner-content .head-banner-content-text h1 {
+        text-transform: capitalize;
+        color: #002A48;
+        margin-bottom: 4px; }
+      .head-banner .head-banner-content .head-banner-content-text h2 {
+        text-transform: capitalize;
+        color: #002A48;
+        margin-bottom: 24px; }
+      .head-banner .head-banner-content .head-banner-content-text p {
+        color: #002A48;
+        margin-bottom: 34px; }
+      .head-banner .head-banner-content .head-banner-content-text .blue-button {
+        font-family: "SVN-Gilroy Light"; }
+      .head-banner .head-banner-content .head-banner-content-text .transparent-button {
+        margin-right: 20px; }
+
+.section-pets {
+  position: relative;
+  margin-top: 100vh; }
+
+.container {
+  padding: 0 9.58vw;
+  max-width: 81.26vw; }
+
+.pointer {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "SVN-Gilroy Bold";
+  font-size: 60px;
+  line-height: 68px; }
+
+h2 {
+  font-family: "SVN-Gilroy Bold";
+  font-size: 46px;
+  line-height: 60px; }
+
+p {
+  font-family: "SVN-Gilroy Light";
+  font-size: 16px;
+  line-height: 24px; }
+
+.blue-button {
+  padding: 10px 28px;
+  background: #003459;
+  border-radius: 57px;
+  font-size: 16px;
+  color: #FDFDFD;
+  font-family: "SVN-Gilroy Bold";
+  border: none;
+  transition: 1s; }
+  .blue-button:hover {
+    background-color: #FFB775; }
+  .blue-button:active {
+    color: #FDFDFD;
+    background-color: #003459; }
+
+.transparent-button {
+  padding: 10px 28px;
+  border-radius: 57px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #003459;
+  font-family: "SVN-Gilroy Light";
+  border: 1.5px solid #003459;
+  transition: 1s; }
+  .transparent-button:hover {
+    background-color: #FFB775;
+    border: 1.5px solid #FFB775; }
+  .transparent-button:active {
+    background-color: transparent;
+    border: 1.5px solid #003459; }
+
+/*# sourceMappingURL=general.css.map */
