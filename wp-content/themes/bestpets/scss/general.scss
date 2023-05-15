@@ -1,0 +1,88 @@
+
+@import 'variables.scss';
+@import 'header.scss';
+@import 'front-page';
+
+
+body {
+    // overflow-x: hidden;
+}
+
+.container {
+    padding: 0 9.58vw;
+    max-width: 81.26vw;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: $bold_font;
+    font-size: 60px;
+    line-height: 68px;
+}
+
+h2 {
+    font-family: $bold_font;
+    font-size: 46px;
+    line-height: 60px;
+}
+
+p {
+    font-family: $reg_font;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+
+.blue-button {
+    padding: 10px 28px;
+    background: #003459;
+    border-radius: 57px;
+    font-size: 16px;
+    color: $dark_white;
+    font-family: $bold_font;
+    border: none;
+    transition: $_1s;
+    
+
+    &:hover {
+        background-color: $orange;
+
+    }
+
+    &:active {
+        color: $dark_white;
+        background-color: $dark_blue;
+    }
+}
+
+.transparent-button {
+    padding: 10px 28px;
+    border-radius: 57px;
+    background-color: transparent;
+    font-size: 16px;
+    color: $dark_blue;
+    font-family: $reg_font;
+    border: 1.5px solid $dark_blue;
+    transition: $_1s;
+
+    &:hover {
+        background-color: $orange;
+        border: 1.5px solid $orange;
+    }
+
+    &:active {
+        background-color: transparent;
+        border: 1.5px solid $dark_blue;
+    }
+}
+
+
