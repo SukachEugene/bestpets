@@ -1,12 +1,12 @@
-
-
 .head-banner {
     background-color: $beige;
+    overflow-x: hidden;
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
     z-index: 2;
+
 
     .head-banner-content {
         display: flex;
@@ -15,38 +15,195 @@
 
         .head-banner-content-text {
             width: 33%;
-            margin-left: 9.58vw;;
+            margin-left: 9.58vw;
+            position: relative;
 
             h1 {
                 text-transform: capitalize;
                 color: $more_dark_blue;
                 margin-bottom: 4px;
+                width: 115%;
             }
 
             h2 {
                 text-transform: capitalize;
                 color: $more_dark_blue;
                 margin-bottom: 24px;
+                width: 115%;
             }
 
             p {
-                color: $more_dark_blue; 
+                color: $more_dark_blue;
                 margin-bottom: 34px;
             }
 
             .blue-button {
                 font-family: $reg_font;
+                border: 1.5px solid $dark_blue;
+
+                &:hover {
+                    border: 1.5px solid $orange;
+                }
             }
 
             .transparent-button {
                 margin-right: 20px;
+
+                img {
+                    vertical-align: middle;
+                    margin-left: 11px;
+                    width: 18px;
+                    height: 18px;
+                }
             }
         }
     }
+}
+
+#head-banner-figure1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#head-banner-figure2 {
+    position: absolute;
+    top: -4px;
+    left: -15px;
+    z-index: -1;
+}
+
+#head-banner-figure3 {
+    position: absolute;
+    bottom: 0;
+}
+
+#head-banner-figure4 {
+    position: absolute;
+    top: 35vh;
+    left: 57%;
+}
+
+#head-banner-figure5 {
+    position: absolute;
+    top: 34vh;
+    left: 57%;
+    z-index: -2;
+}
+
+#head-banner-figure6 {
+    position: absolute;
+    top: 25vh;
+    left: 58.8%;
+}
+
+#head-banner-figure7 {
+    position: absolute;
+    bottom: 0;
+    left: 49.9%;
+}
+
+#head-banner-figure8 {
+    position: absolute;
+    bottom: 0;
+    left: 51%;
+}
+
+
+// .head-banner-content-image {
+//     position: relative;
+// }
+
+#head-banner-image {
+    position: absolute;
+    bottom: 0;
 }
 
 
 .section-pets {
     position: relative;
     margin-top: 100vh;
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .head-banner {
+
+        // height: 135vh;
+
+        .head-banner-content {
+
+            display: flex;
+            flex-direction: column;
+
+            .head-banner-content-text {
+                width: 81.26vw;
+                margin-left: 9.58vw;
+                margin-right: 9.58vw;
+                position: relative;
+                margin-top: 150px;
+
+                p {
+                    width: 70%;
+                }
+
+            }
+
+
+        }
+    }
+
+    
+    #head-banner-image {
+        right: -15%;
+        min-width: 300px;
+    }
+
+    #head-banner-figure4 {
+        position: absolute;
+        top: 35vh;
+        left: 77%;
+    }
+    
+    #head-banner-figure5 {
+        position: absolute;
+        top: 34vh;
+        left: 77%;
+        z-index: -2;
+    }
+    
+    #head-banner-figure6 {
+        position: absolute;
+        top: 25vh;
+        left: 78.8%;
+    }
+
+    #head-banner-figure7 {
+        position: absolute;
+        bottom: 0;
+        left: 28.5%;
+    }
+    
+    #head-banner-figure8 {
+        position: absolute;
+        bottom: 0;
+        left: 31%;
+    }
+
+    .head-banner-content-text {
+        z-index: 10;
+    }
+
+    // .head-banner-content-image {
+
+    //     bottom: 0;
+    //     width: 100%;
+    //     left: 0;
+    //     height: 750px;
+    // }
+
+    
 }

@@ -1,21 +1,17 @@
 /*
-Error: Undefined variable: "$_1s".
-        on line 15 of C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\header.scss
+Error: Undefined variable: "$beige".
+        on line 2 of C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\front-page.scss
 
-10:     background-color: transparent;
-11:     width: 100%;
-12:     padding: 28px 9.58vw 12px 9.58vw;
-13:     max-width: 81.26vw;
-14: 
-15:     transition: $_1s;
-16: 
-17:     &.colored {
-18:         background-color: $white;
-19:     }
-20: 
+1: .head-banner {
+2:     background-color: $beige;
+3:     overflow-x: hidden;
+4:     height: 100vh;
+5:     width: 100%;
+6:     position: absolute;
+7:     top: 0;
 
 Backtrace:
-C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\header.scss:15
+C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\front-page.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$_1s\".\A         on line 15 of C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\header.scss\A \A 10:     background-color: transparent;\A 11:     width: 100%;\A 12:     padding: 28px 9.58vw 12px 9.58vw;\A 13:     max-width: 81.26vw;\A 14: \A 15:     transition: $_1s;\A 16: \A 17:     &.colored {\A 18:         background-color: $white;\A 19:     }\A 20: "; }
+  content: "Error: Undefined variable: \"$beige\".\A         on line 2 of C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\front-page.scss\A \A 1: .head-banner {\A 2:     background-color: $beige;\A 3:     overflow-x: hidden;\A 4:     height: 100vh;\A 5:     width: 100%;\A 6:     position: absolute;\A 7:     top: 0;"; }
