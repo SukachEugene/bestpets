@@ -100,7 +100,17 @@ get_header()
 
     <h1>TEST</h1>
 
+    <section>
+
+    <p>Whats new?</p>
+    <div>
+        <h3>Take a look at some of our pets</h3>
+        <button type="button" class="transparent-button pointer">View more</button>
+    </div>
+
     <?php get_template_part('templates/block', 'pets-two-rows'); ?>
+
+    <section>
 </div>
 
 

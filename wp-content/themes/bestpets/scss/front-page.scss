@@ -1,3 +1,10 @@
+@import 'variables.scss';
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+
 .head-banner {
     background-color: $beige;
     overflow-x: hidden;
@@ -126,6 +133,74 @@
 }
 
 
+.pets-grid-4-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.5vw;
+    row-gap: 2.5vw;
+}
+
+.pet-single-product-card {
+    background-color: $white;
+    padding: 8px 8px 20px 8px;
+    box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+
+    .pet-single-product-card-image-container {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+
+        img {
+            width: 100%;
+            transition: $_1s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .pet-name {
+        font-family: $bold_font;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+
+        &:hover {
+            color: $dark_blue;
+        }
+    }
+
+    .pet-attributes {
+        padding: 4px 0 10px 0;
+        font-size: 12px;
+        line-height: 18px;
+        color: #667479;
+    }
+
+    .pet-price-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .take-button {
+            background-color: $grey;
+            color: $white;
+            padding: 3px 10%;
+            transition: $_1s;
+
+            &:hover {
+                background-color: $dark_blue;
+            }
+        }
+    }
+}
+
 
 
 
@@ -156,7 +231,7 @@
         }
     }
 
-    
+
     #head-banner-image {
         right: -15%;
         min-width: 300px;
@@ -167,14 +242,14 @@
         top: 35vh;
         left: 77%;
     }
-    
+
     #head-banner-figure5 {
         position: absolute;
         top: 34vh;
         left: 77%;
         z-index: -2;
     }
-    
+
     #head-banner-figure6 {
         position: absolute;
         top: 25vh;
@@ -186,7 +261,7 @@
         bottom: 0;
         left: 28.5%;
     }
-    
+
     #head-banner-figure8 {
         position: absolute;
         bottom: 0;
@@ -205,7 +280,7 @@
     //     height: 750px;
     // }
 
-    
+
 }
 
 
@@ -222,19 +297,20 @@
 
         height: 900px;
     }
+
     // #head-banner-figure4 {
     //     position: absolute;
     //     top: 45vh;
     //     left: 87%;
     // }
-    
+
     // #head-banner-figure5 {
     //     position: absolute;
     //     top: 44vh;
     //     left: 87%;
     //     z-index: -2;
     // }
-    
+
     // #head-banner-figure6 {
     //     position: absolute;
     //     top: 35vh;
@@ -260,10 +336,11 @@
                 h1 {
                     width: 100%;
                 }
+
                 h2 {
                     width: 100%;
                 }
-                
+
             }
 
         }
@@ -283,25 +360,25 @@
                 p {
                     width: 100%;
                 }
-                
+
             }
 
         }
     }
 
-        #head-banner-figure4 {
+    #head-banner-figure4 {
         position: absolute;
         top: 30vh;
         left: 87%;
     }
-    
+
     #head-banner-figure5 {
         position: absolute;
         top: 29vh;
         left: 87%;
         z-index: -2;
     }
-    
+
     #head-banner-figure6 {
         position: absolute;
         top: 20vh;
