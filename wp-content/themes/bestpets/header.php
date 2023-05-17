@@ -54,15 +54,6 @@
 
                 <div class="header-basket">
                     <i class="fa-sharp fa-solid fa-basket-shopping fa-xl pointer"></i>
-                    <?php
-                    $basket = get_field('basket_icon', 'options');
-                    if (!$basket) :
-                    ?>
-
-                        <img src="<?php echo $basket['url']; ?>" alt="<?php echo $basket['alt']; ?>" title="<?php echo $basket['title']; ?>">
-
-
-                    <?php endif ?>
                 </div>
 
             <!-- </div>
