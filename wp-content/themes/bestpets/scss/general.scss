@@ -8,6 +8,10 @@
 //     overflow-x: hidden !important;
 // }
 
+body {
+    font-family: $reg_font;
+}
+
 .container {
     padding: 0 9.58vw;
     max-width: 81.26vw;
@@ -37,6 +41,10 @@ p {
     font-family: $reg_font;
     font-size: 16px;
     line-height: 24px;
+}
+
+.bold {
+    font-family: $bold_font;
 }
 
 
@@ -83,6 +91,18 @@ p {
         background-color: transparent;
         border: 1.5px solid $dark_blue;
     }
+}
+
+.padding-left-5 {
+    padding-left: 5px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
 }
 
 

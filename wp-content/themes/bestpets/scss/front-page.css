@@ -1,61 +1,226 @@
-/*
-Error: Undefined variable: "$beige".
-        on line 2 of C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\front-page.scss
+body {
+  background-color: #e9e9e9; }
 
-1: .head-banner {
-2:     background-color: $beige;
-3:     overflow-x: hidden;
-4:     height: 100vh;
-5:     width: 100%;
-6:     position: absolute;
-7:     top: 0;
+.head-banner {
+  background-color: #FCEED5;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2; }
+  .head-banner .head-banner-content {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .head-banner .head-banner-content .head-banner-content-text {
+      width: 40%;
+      margin-left: 9.58vw;
+      position: relative; }
+      .head-banner .head-banner-content .head-banner-content-text h1 {
+        text-transform: capitalize;
+        color: #002A48;
+        margin-bottom: 4px;
+        width: 200%; }
+      .head-banner .head-banner-content .head-banner-content-text h2 {
+        text-transform: capitalize;
+        color: #002A48;
+        margin-bottom: 24px;
+        width: 115%; }
+      .head-banner .head-banner-content .head-banner-content-text p {
+        color: #002A48;
+        margin-bottom: 34px; }
+      .head-banner .head-banner-content .head-banner-content-text .blue-button {
+        font-family: "SVN-Gilroy Light";
+        border: 1.5px solid #003459; }
+        .head-banner .head-banner-content .head-banner-content-text .blue-button:hover {
+          border: 1.5px solid #FFB775; }
+      .head-banner .head-banner-content .head-banner-content-text .transparent-button {
+        margin-right: 20px; }
+        .head-banner .head-banner-content .head-banner-content-text .transparent-button img {
+          vertical-align: middle;
+          margin-left: 11px;
+          width: 18px;
+          height: 18px; }
 
-Backtrace:
-C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\front-page.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$beige\".\A         on line 2 of C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\scss\front-page.scss\A \A 1: .head-banner {\A 2:     background-color: $beige;\A 3:     overflow-x: hidden;\A 4:     height: 100vh;\A 5:     width: 100%;\A 6:     position: absolute;\A 7:     top: 0;"; }
+#head-banner-figure1 {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#head-banner-figure2 {
+  position: absolute;
+  top: -4px;
+  left: -15px;
+  z-index: -1; }
+
+#head-banner-figure3 {
+  position: absolute;
+  bottom: 0; }
+
+#head-banner-figure4 {
+  position: absolute;
+  top: 35vh;
+  left: 57%; }
+
+#head-banner-figure5 {
+  position: absolute;
+  top: 34vh;
+  left: 57%;
+  z-index: -2; }
+
+#head-banner-figure6 {
+  position: absolute;
+  top: 25vh;
+  left: 58.8%; }
+
+#head-banner-figure7 {
+  position: absolute;
+  bottom: 0;
+  left: 49.9%; }
+
+#head-banner-figure8 {
+  position: absolute;
+  bottom: 0;
+  left: 51%; }
+
+#head-banner-image {
+  position: absolute;
+  bottom: 0; }
+
+.section-pets {
+  position: relative;
+  margin-top: 100vh; }
+
+.pets-grid-4-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.5vw;
+  row-gap: 2.5vw; }
+
+.pet-single-product-card {
+  background-color: white;
+  padding: 8px 8px 20px 8px;
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  border-radius: 12px; }
+  .pet-single-product-card .pet-single-product-card-image-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px; }
+    .pet-single-product-card .pet-single-product-card-image-container img {
+      width: 100%;
+      transition: 1s; }
+      .pet-single-product-card .pet-single-product-card-image-container img:hover {
+        transform: scale(1.1); }
+  .pet-single-product-card .pet-name {
+    font-family: "SVN-Gilroy Bold";
+    font-size: 16px;
+    line-height: 24px;
+    color: #00171F; }
+    .pet-single-product-card .pet-name:hover {
+      color: #003459; }
+  .pet-single-product-card .pet-attributes {
+    padding: 4px 0 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #667479; }
+  .pet-single-product-card .pet-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .pet-single-product-card .pet-price-container .take-button {
+      background-color: #667479;
+      color: white;
+      padding: 3px 10%;
+      transition: 1s; }
+      .pet-single-product-card .pet-price-container .take-button:hover {
+        background-color: #003459; }
+
+@media screen and (max-width: 1200px) {
+  .head-banner {
+    height: 1000px; }
+    .head-banner .head-banner-content {
+      display: flex;
+      flex-direction: column; }
+      .head-banner .head-banner-content .head-banner-content-text {
+        width: 81.26vw;
+        margin-left: 9.58vw;
+        margin-right: 9.58vw;
+        position: relative;
+        margin-top: 150px; }
+        .head-banner .head-banner-content .head-banner-content-text p {
+          width: 70%; }
+
+  #head-banner-image {
+    right: -15%;
+    min-width: 300px; }
+
+  #head-banner-figure4 {
+    position: absolute;
+    top: 35vh;
+    left: 77%; }
+
+  #head-banner-figure5 {
+    position: absolute;
+    top: 34vh;
+    left: 77%;
+    z-index: -2; }
+
+  #head-banner-figure6 {
+    position: absolute;
+    top: 25vh;
+    left: 78.8%; }
+
+  #head-banner-figure7 {
+    position: absolute;
+    bottom: 0;
+    left: 28.5%; }
+
+  #head-banner-figure8 {
+    position: absolute;
+    bottom: 0;
+    left: 31%; }
+
+  .head-banner-content-text {
+    z-index: 10; } }
+@media screen and (max-width: 800px) {
+  .head-banner {
+    height: 950px; } }
+@media screen and (max-width: 700px) {
+  .head-banner {
+    height: 900px; } }
+@media screen and (max-width: 650px) {
+  .head-banner {
+    height: 850px; } }
+@media screen and (max-width: 600px) {
+  .head-banner .head-banner-content .head-banner-content-text h1 {
+    width: 100%; }
+  .head-banner .head-banner-content .head-banner-content-text h2 {
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  .head-banner {
+    height: 750px; }
+    .head-banner .head-banner-content .head-banner-content-text p {
+      width: 100%; }
+
+  #head-banner-figure4 {
+    position: absolute;
+    top: 30vh;
+    left: 87%; }
+
+  #head-banner-figure5 {
+    position: absolute;
+    top: 29vh;
+    left: 87%;
+    z-index: -2; }
+
+  #head-banner-figure6 {
+    position: absolute;
+    top: 20vh;
+    left: 88.8%; } }
+
+/*# sourceMappingURL=front-page.css.map */
