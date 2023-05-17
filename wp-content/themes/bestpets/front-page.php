@@ -58,32 +58,32 @@ get_header()
 
         <div class="head-banner-content-image">
 
-        <?php if ($figure4) : ?>
-            <img id="head-banner-figure4" src="<?php echo $figure4['url']; ?>" alt="<?php echo $figure4['alt']; ?>" title="<?php echo $figure4['title']; ?>">
-        <?php endif; ?>
+            <?php if ($figure4) : ?>
+                <img id="head-banner-figure4" src="<?php echo $figure4['url']; ?>" alt="<?php echo $figure4['alt']; ?>" title="<?php echo $figure4['title']; ?>">
+            <?php endif; ?>
 
-        <?php if ($figure5) : ?>
-            <img id="head-banner-figure5" src="<?php echo $figure5['url']; ?>" alt="<?php echo $figure5['alt']; ?>" title="<?php echo $figure5['title']; ?>">
-        <?php endif; ?>
+            <?php if ($figure5) : ?>
+                <img id="head-banner-figure5" src="<?php echo $figure5['url']; ?>" alt="<?php echo $figure5['alt']; ?>" title="<?php echo $figure5['title']; ?>">
+            <?php endif; ?>
 
-        <?php if ($figure6) : ?>
-            <img id="head-banner-figure6" src="<?php echo $figure6['url']; ?>" alt="<?php echo $figure6['alt']; ?>" title="<?php echo $figure6['title']; ?>">
-        <?php endif; ?>
+            <?php if ($figure6) : ?>
+                <img id="head-banner-figure6" src="<?php echo $figure6['url']; ?>" alt="<?php echo $figure6['alt']; ?>" title="<?php echo $figure6['title']; ?>">
+            <?php endif; ?>
 
 
-        <?php if ($figure7) : ?>
-            <img id="head-banner-figure7" src="<?php echo $figure7['url']; ?>" alt="<?php echo $figure7['alt']; ?>" title="<?php echo $figure7['title']; ?>">
-        <?php endif; ?>
+            <?php if ($figure7) : ?>
+                <img id="head-banner-figure7" src="<?php echo $figure7['url']; ?>" alt="<?php echo $figure7['alt']; ?>" title="<?php echo $figure7['title']; ?>">
+            <?php endif; ?>
 
-        <?php if ($figure8) : ?>
-            <img id="head-banner-figure8" src="<?php echo $figure8['url']; ?>" alt="<?php echo $figure8['alt']; ?>" title="<?php echo $figure8['title']; ?>">
-        <?php endif; ?>
+            <?php if ($figure8) : ?>
+                <img id="head-banner-figure8" src="<?php echo $figure8['url']; ?>" alt="<?php echo $figure8['alt']; ?>" title="<?php echo $figure8['title']; ?>">
+            <?php endif; ?>
 
-        <?php 
-        $head_banner_image = get_field('head_banner_image', 'options');
-        if ($head_banner_image) : ?>
-            <img id="head-banner-image" src="<?php echo $head_banner_image['url']; ?>" alt="<?php echo $head_banner_image['alt']; ?>" title="<?php echo $head_banner_image['title']; ?>">
-        <?php endif; ?>
+            <?php
+            $head_banner_image = get_field('head_banner_image', 'options');
+            if ($head_banner_image) : ?>
+                <img id="head-banner-image" src="<?php echo $head_banner_image['url']; ?>" alt="<?php echo $head_banner_image['alt']; ?>" title="<?php echo $head_banner_image['title']; ?>">
+            <?php endif; ?>
 
         </div>
 
@@ -100,18 +100,7 @@ get_header()
 
     <h1>TEST</h1>
 
-    <?php
-
-    $args = array(
-        'post_type' => 'product',
-        'posts_per_page' => -1
-    );
-    $products = get_posts($args);
-
-    var_dump($products)
-
-    ?>
-
+    <?php get_template_part('templates/block', 'pets-two-rows'); ?>
 </div>
 
 

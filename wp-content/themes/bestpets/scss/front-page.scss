@@ -14,7 +14,7 @@
         height: 100%;
 
         .head-banner-content-text {
-            width: 33%;
+            width: 40%;
             margin-left: 9.58vw;
             position: relative;
 
@@ -22,7 +22,7 @@
                 text-transform: capitalize;
                 color: $more_dark_blue;
                 margin-bottom: 4px;
-                width: 115%;
+                width: 200%;
             }
 
             h2 {
@@ -132,7 +132,7 @@
 @media screen and (max-width: 1200px) {
     .head-banner {
 
-        // height: 135vh;
+        height: 1000px;
 
         .head-banner-content {
 
@@ -206,4 +206,105 @@
     // }
 
     
+}
+
+
+@media screen and (max-width: 800px) {
+    .head-banner {
+
+        height: 950px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .head-banner {
+
+        height: 900px;
+    }
+    // #head-banner-figure4 {
+    //     position: absolute;
+    //     top: 45vh;
+    //     left: 87%;
+    // }
+    
+    // #head-banner-figure5 {
+    //     position: absolute;
+    //     top: 44vh;
+    //     left: 87%;
+    //     z-index: -2;
+    // }
+    
+    // #head-banner-figure6 {
+    //     position: absolute;
+    //     top: 35vh;
+    //     left: 88.8%;
+    // }
+}
+
+@media screen and (max-width: 650px) {
+    .head-banner {
+
+        height: 850px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .head-banner {
+
+
+
+        .head-banner-content {
+            .head-banner-content-text {
+                h1 {
+                    width: 100%;
+                }
+                h2 {
+                    width: 100%;
+                }
+                
+            }
+
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .head-banner {
+
+        height: 750px;
+
+        .head-banner-content {
+            .head-banner-content-text {
+                p {
+                    width: 100%;
+                }
+                
+            }
+
+        }
+    }
+
+        #head-banner-figure4 {
+        position: absolute;
+        top: 30vh;
+        left: 87%;
+    }
+    
+    #head-banner-figure5 {
+        position: absolute;
+        top: 29vh;
+        left: 87%;
+        z-index: -2;
+    }
+    
+    #head-banner-figure6 {
+        position: absolute;
+        top: 20vh;
+        left: 88.8%;
+    }
 }

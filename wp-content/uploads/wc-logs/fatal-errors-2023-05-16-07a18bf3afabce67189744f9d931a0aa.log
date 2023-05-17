@@ -1,0 +1,36 @@
+2023-05-16T10:06:54+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 123
+
+2023-05-16T10:10:44+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 124
+
+2023-05-16T10:12:08+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:123
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 123
+
+2023-05-16T12:24:10+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:123
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 123
+
+2023-05-16T13:53:24+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_attribute() in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:125
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 125
+
+2023-05-16T14:07:04+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:126
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 126
+

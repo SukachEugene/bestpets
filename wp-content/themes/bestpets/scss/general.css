@@ -78,14 +78,14 @@ header {
     align-items: center;
     height: 100%; }
     .head-banner .head-banner-content .head-banner-content-text {
-      width: 33%;
+      width: 40%;
       margin-left: 9.58vw;
       position: relative; }
       .head-banner .head-banner-content .head-banner-content-text h1 {
         text-transform: capitalize;
         color: #002A48;
         margin-bottom: 4px;
-        width: 115%; }
+        width: 200%; }
       .head-banner .head-banner-content .head-banner-content-text h2 {
         text-transform: capitalize;
         color: #002A48;
@@ -157,17 +157,19 @@ header {
   margin-top: 100vh; }
 
 @media screen and (max-width: 1200px) {
-  .head-banner .head-banner-content {
-    display: flex;
-    flex-direction: column; }
-    .head-banner .head-banner-content .head-banner-content-text {
-      width: 81.26vw;
-      margin-left: 9.58vw;
-      margin-right: 9.58vw;
-      position: relative;
-      margin-top: 150px; }
-      .head-banner .head-banner-content .head-banner-content-text p {
-        width: 70%; }
+  .head-banner {
+    height: 1000px; }
+    .head-banner .head-banner-content {
+      display: flex;
+      flex-direction: column; }
+      .head-banner .head-banner-content .head-banner-content-text {
+        width: 81.26vw;
+        margin-left: 9.58vw;
+        margin-right: 9.58vw;
+        position: relative;
+        margin-top: 150px; }
+        .head-banner .head-banner-content .head-banner-content-text p {
+          width: 70%; }
 
   #head-banner-image {
     right: -15%;
@@ -201,6 +203,41 @@ header {
 
   .head-banner-content-text {
     z-index: 10; } }
+@media screen and (max-width: 800px) {
+  .head-banner {
+    height: 950px; } }
+@media screen and (max-width: 700px) {
+  .head-banner {
+    height: 900px; } }
+@media screen and (max-width: 650px) {
+  .head-banner {
+    height: 850px; } }
+@media screen and (max-width: 600px) {
+  .head-banner .head-banner-content .head-banner-content-text h1 {
+    width: 100%; }
+  .head-banner .head-banner-content .head-banner-content-text h2 {
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  .head-banner {
+    height: 750px; }
+    .head-banner .head-banner-content .head-banner-content-text p {
+      width: 100%; }
+
+  #head-banner-figure4 {
+    position: absolute;
+    top: 30vh;
+    left: 87%; }
+
+  #head-banner-figure5 {
+    position: absolute;
+    top: 29vh;
+    left: 87%;
+    z-index: -2; }
+
+  #head-banner-figure6 {
+    position: absolute;
+    top: 20vh;
+    left: 88.8%; } }
 .container {
   padding: 0 9.58vw;
   max-width: 81.26vw; }
@@ -256,5 +293,18 @@ p {
   .transparent-button:active {
     background-color: transparent;
     border: 1.5px solid #003459; }
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 46px;
+    line-height: 60px; }
+
+  h2 {
+    font-size: 28px;
+    line-height: 38px; }
+
+  p {
+    font-size: 12px;
+    line-height: 18px; } }
 
 /*# sourceMappingURL=general.css.map */
