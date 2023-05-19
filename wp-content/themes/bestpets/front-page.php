@@ -182,7 +182,7 @@ get_header()
     </section>
 
 
-    <section class="section-pets-grid-4-2">
+    <section class="section-goods-grid-4-2">
 
         <?php
         $arrow_right = get_field('arrow_right', 'options');
@@ -208,7 +208,7 @@ get_header()
     </section>
 
 
-    <section class="section-pets-grid-4-2">
+    <section class="section-sellers margin-bottom-50">
 
         <?php
         $arrow_right = get_field('arrow_right', 'options');
@@ -242,13 +242,105 @@ get_header()
                     $image = $seller['sellers_image'];
 
                     if ($image) {
-                    echo '<img src="'. $image['url'].'" alt="'. $image['alt'].'" title="'. $image['title'].'">';
+                        echo '<img src="' . $image['url'] . '" alt="' . $image['alt'] . '" title="' . $image['title'] . '">';
                     }
                 }
             endif;
             ?>
         </div>
 
+
+    </section>
+
+
+
+    <section class="middle-banner-type2 margin-bottom-60">
+
+        <div class="middle-banner-content-type2">
+
+            <?php
+            $figure3 = get_field('figure3');
+            $figure4 = get_field('figure4');
+            ?>
+
+            <?php if ($figure3) : ?>
+                <img id="middle-banner-figure3" src="<?php echo $figure3['url']; ?>" alt="<?php echo $figure3['alt']; ?>" title="<?php echo $figure3['title']; ?>">
+            <?php endif; ?>
+
+
+            <?php if ($figure4) : ?>
+                <img id="middle-banner-figure4" src="<?php echo $figure4['url']; ?>" alt="<?php echo $figure4['alt']; ?>" title="<?php echo $figure4['title']; ?>">
+            <?php endif; ?>
+
+
+            <div class="middle-banner-content-image">
+
+                <?php
+                $middle_banner_photo_2 = get_field('middle_banner_photo_2');
+                if ($middle_banner_photo_2) : ?>
+                    <img id="middle-banner-photo" src="<?php echo $middle_banner_photo_2['url']; ?>" alt="<?php echo $middle_banner_photo_2['alt']; ?>" title="<?php echo $middle_banner_photo_2['title']; ?>">
+                <?php endif; ?>
+
+            </div>
+
+
+
+            <div class="middle-banner-content-text">
+
+                <?php
+                $pawprint = get_field('pawprint', 'options');
+                ?>
+
+                <p class="banner-title1">Adoption <?php if ($pawprint) { ?>
+                        <img src="<?php echo $pawprint['url']; ?>" alt="<?php echo $pawprint['alt']; ?>" title="<?php echo $pawprint['title']; ?>">
+
+                    <?php } ?>
+                </p>
+                <p class="banner-title2">We Need Help. So Do They.</p>
+                <p class="banner-p">
+                    Adopt a pet and give it a home,</br>
+                    it will be love you back unconditionally.
+                </p>
+                <div>
+
+                    <button type="button" class="transparent-button pointer">View Intro
+                        <?php
+                        if ($video_icon) :
+                        ?>
+                            <img src="<?php echo $video_icon['url']; ?>" alt="<?php echo $video_icon['alt']; ?>" title="<?php echo $video_icon['title']; ?>">
+                        <?php endif; ?>
+
+                    </button>
+                    <button type="button" class="blue-button2 pointer">Explore Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="blog-posts">
+
+        <?php
+        $arrow_right = get_field('arrow_right', 'options');
+        ?>
+
+        <p class="title-p">You already know ?</p>
+        <div class="block-header">
+            <h3>Useful pet knowledge</h3>
+            <button type="button" class="transparent-button2 pointer button-with-icon">
+                <span>View more</span>
+                <?php
+                if ($arrow_right) {
+                ?>
+                    <img class="padding-left-10" src="<?php echo $arrow_right['url']; ?>" alt="<?php echo $arrow_right['alt']; ?>" title="<?php echo $arrow_right['title']; ?>">
+                <?php
+                }
+                ?>
+            </button>
+        </div>
+
+       
 
     </section>
 

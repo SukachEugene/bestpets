@@ -1,20 +1,23 @@
 <?php
 
-$args = array(
-    'post_type' => 'product',
-    'tax_query' => array(
-        array(
-            'taxonomy' => 'product_cat',
-            'field' => 'slug',
-            'terms' => 'pets'
-        )
-    ),
-    'posts_per_page' => 8,
-    'order' => 'ASC',
-    'orderby' => 'modified'
-);
+// $args = array(
+//     'post_type' => 'product',
+//     'tax_query' => array(
+//         array(
+//             'taxonomy' => 'product_cat',
+//             'field' => 'slug',
+//             'terms' => 'pets'
+//         )
+//     ),
+//     'posts_per_page' => 8,
+//     'order' => 'ASC',
+//     'orderby' => 'modified'
+// );
 
-$pets = get_posts($args);
+// $pets = get_posts($args);
+
+$pets = get_field('pets');
+
 ?>
 
 <div class="pets-grid-4-2">
@@ -60,6 +63,7 @@ $pets = get_posts($args);
             echo '<div class="bold pet-price-container">' . $formatted_price . ' UAH <a href="' . esc_url($add_to_cart_url) . '" data-quantity="1" class="take-button">TAKE</a></div>';
 
             // echo '';
+            
             ?>
             </div>
 
