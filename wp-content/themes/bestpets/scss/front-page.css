@@ -251,4 +251,35 @@ body {
   bottom: 0;
   z-index: 1; }
 
+.blog-post {
+  padding: 8px 8px 16px;
+  background-color: white;
+  border-radius: 12px; }
+  .blog-post img {
+    width: 100%;
+    border-radius: 12px; }
+  .blog-post .blog-post-tags-container {
+    padding: 13px 8px 10px;
+    display: flex;
+    gap: 5px; }
+    .blog-post .blog-post-tags-container .tag-name {
+      padding: 2px 10px;
+      color: white;
+      background-color: #00A7E7;
+      border-radius: 28px;
+      font-size: 10px;
+      line-height: 16px;
+      font-family: "SVN-Gilroy Bold"; }
+  .blog-post .blog-post-text-container {
+    padding: 0 8px; }
+  .blog-post .post-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #00171F;
+    font-family: "SVN-Gilroy Bold"; }
+    .blog-post .post-title:hover {
+      color: #667479; }
+  .blog-post .post-excerpt {
+    padding-top: 6px; }
+
 /*# sourceMappingURL=front-page.css.map */
