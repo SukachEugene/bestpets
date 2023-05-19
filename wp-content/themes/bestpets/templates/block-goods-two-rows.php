@@ -1,20 +1,22 @@
 <?php
 
-$args = array(
-    'post_type' => 'product',
-    'tax_query' => array(
-        array(
-            'taxonomy' => 'product_cat',
-            'field' => 'slug',
-            'terms' => 'top-goods'
-        )
-    ),
-    'posts_per_page' => 8,
-    'order' => 'ASC',
-    'orderby' => 'modified'
-);
+// $args = array(
+//     'post_type' => 'product',
+//     'tax_query' => array(
+//         array(
+//             'taxonomy' => 'product_cat',
+//             'field' => 'slug',
+//             'terms' => 'top-goods'
+//         )
+//     ),
+//     'posts_per_page' => 8,
+//     'order' => 'ASC',
+//     'orderby' => 'modified'
+// );
 
-$goods_array = get_posts($args);
+// $goods_array = get_posts($args);
+
+$goods_array = get_field('goods');
 ?>
 
 

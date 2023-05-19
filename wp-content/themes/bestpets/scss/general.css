@@ -205,10 +205,10 @@ body {
       .pet-single-product-card .pet-price-container .take-button:hover {
         background-color: #003459; }
 
-.section-pets-grid-4-2 {
+.section-pets-grid-4-2, .section-goods-grid-4-2 {
   padding-top: 60px;
   padding-bottom: 60px; }
-  .section-pets-grid-4-2 h3 {
+  .section-pets-grid-4-2 h3, .section-goods-grid-4-2 h3 {
     color: #003459; }
 
 .middle-banner {
@@ -263,6 +263,61 @@ body {
   z-index: 1;
   height: 100%; }
 
+.middle-banner-type2 {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden; }
+  .middle-banner-type2 .transparent-button, .middle-banner-type2 .transparent-button2 {
+    margin-right: 20px; }
+    .middle-banner-type2 .transparent-button img, .middle-banner-type2 .transparent-button2 img {
+      vertical-align: middle;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px; }
+
+.middle-banner-content-type2 {
+  position: relative;
+  background-color: #FFB775;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center; }
+  .middle-banner-content-type2 .middle-banner-content-image {
+    z-index: 10;
+    align-self: stretch;
+    padding-left: 20px;
+    padding-right: 5%;
+    width: 43.5%; }
+    .middle-banner-content-type2 .middle-banner-content-image img {
+      height: 100%;
+      max-width: none; }
+  .middle-banner-content-type2 .middle-banner-content-text {
+    z-index: 10;
+    text-align: left;
+    padding-top: 64px;
+    padding-bottom: 56px;
+    width: 50%;
+    padding-left: 7.2%; }
+    .middle-banner-content-type2 .middle-banner-content-text .banner-p {
+      padding-top: 8px;
+      padding-bottom: 24px;
+      text-align: left;
+      width: 75%; }
+
+#middle-banner-figure3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%; }
+
+#middle-banner-figure4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
 body {
   font-family: "SVN-Gilroy Light"; }
 
@@ -311,7 +366,8 @@ p {
   display: flex;
   justify-content: space-between;
   padding-top: 2px;
-  padding-bottom: 28px; }
+  padding-bottom: 28px;
+  color: #003459; }
 
 .blue-button, .blue-button2 {
   padding: 10px 28px;
@@ -375,6 +431,12 @@ p {
 
 .padding-right-10 {
   padding-right: 10px; }
+
+.margin-bottom-50 {
+  margin-bottom: 50px; }
+
+.margin-bottom-60 {
+  margin-bottom: 60px; }
 
 .banner-title1 {
   font-family: "SVN-Gilroy Bold";
