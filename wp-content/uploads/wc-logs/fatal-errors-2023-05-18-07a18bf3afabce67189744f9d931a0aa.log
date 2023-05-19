@@ -1,0 +1,27 @@
+2023-05-18T10:36:04+00:00 CRITICAL Uncaught Error: Call to a member function get_attribute() on bool in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\templates\block-goods-two-rows.php:29
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template.php(785): require()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template.php(718): load_template('C:\\Users\\sukach...', false, Array)
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php(206): get_template_part('templates/block', 'goods-two-rows')
+#4 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#6 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#7 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\templates\block-goods-two-rows.php on line 29
+
+2023-05-18T10:36:21+00:00 CRITICAL Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\templates\block-goods-two-rows.php:33
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\templates\block-goods-two-rows.php(33): number_format('', 0, ',', '.')
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template.php(785): require('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template.php(718): load_template('C:\\Users\\sukach...', false, Array)
+#3 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php(206): get_template_part('templates/block', 'goods-two-rows')
+#5 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\sukach...')
+#6 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#7 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#8 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\templates\block-goods-two-rows.php on line 33
+
+2023-05-18T14:40:54+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 246
+

@@ -48,6 +48,8 @@ $pets = get_posts($args);
                 }
                 ?>
             </div>
+
+            <div class="pet-single-product-card-text-container">
             <?php
 
             echo '<a class="pet-name" href="' . $link . '">' . $_SKU . ' - ' . $product_title . '</a>';
@@ -57,10 +59,10 @@ $pets = get_posts($args);
             
             echo '<div class="bold pet-price-container">' . $formatted_price . ' UAH <a href="' . esc_url($add_to_cart_url) . '" data-quantity="1" class="take-button">TAKE</a></div>';
 
-            echo '';
-
-            // var_dump($pet);
+            // echo '';
             ?>
+            </div>
+
         </div>
     <?php
     }

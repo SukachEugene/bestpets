@@ -51,7 +51,7 @@ get_header()
                     <?php endif; ?>
 
                 </button>
-                <button type="button" class="blue-button pointer">Explore Now</button>
+                <button type="button" class="blue-button2 pointer">Explore Now</button>
             </div>
 
         </div>
@@ -98,19 +98,160 @@ get_header()
 
 <div class="container">
 
-    <h1>TEST</h1>
+    <section class="section-pets-grid-4-2">
 
-    <section>
+        <?php
+        $arrow_right = get_field('arrow_right', 'options');
+        ?>
 
-    <p>Whats new?</p>
-    <div>
-        <h3>Take a look at some of our pets</h3>
-        <button type="button" class="transparent-button pointer">View more</button>
-    </div>
+        <p class="title-p">Whats new?</p>
+        <div class="block-header">
+            <h3>Take a look at some of our pets</h3>
+            <button type="button" class="transparent-button2 pointer button-with-icon">
+                <span>View more</span>
+                <?php
+                if ($arrow_right) {
+                ?>
+                    <img class="padding-left-10" src="<?php echo $arrow_right['url']; ?>" alt="<?php echo $arrow_right['alt']; ?>" title="<?php echo $arrow_right['title']; ?>">
+                <?php
+                }
+                ?>
+            </button>
+        </div>
 
-    <?php get_template_part('templates/block', 'pets-two-rows'); ?>
+        <?php get_template_part('templates/block', 'pets-two-rows'); ?>
 
-    <section>
+    </section>
+
+    <section class="middle-banner">
+
+        <div class="middle-banner-content">
+
+            <?php
+            $figure1 = get_field('figure1');
+            $figure2 = get_field('figure2');
+            ?>
+
+            <?php if ($figure1) : ?>
+                <img id="middle-banner-figure1" src="<?php echo $figure1['url']; ?>" alt="<?php echo $figure1['alt']; ?>" title="<?php echo $figure1['title']; ?>">
+            <?php endif; ?>
+
+
+            <?php if ($figure2) : ?>
+                <img id="middle-banner-figure2" src="<?php echo $figure2['url']; ?>" alt="<?php echo $figure2['alt']; ?>" title="<?php echo $figure2['title']; ?>">
+            <?php endif; ?>
+
+
+            <div class="middle-banner-content-image">
+
+                <?php
+                $middle_banner_photo = get_field('middle_banner_photo');
+                if ($middle_banner_photo) : ?>
+                    <img id="middle-banner-photo" src="<?php echo $middle_banner_photo['url']; ?>" alt="<?php echo $middle_banner_photo['alt']; ?>" title="<?php echo $middle_banner_photo['title']; ?>">
+                <?php endif; ?>
+
+            </div>
+
+
+
+            <div class="middle-banner-content-text">
+
+                <p class="banner-title1">One more friend</p>
+                <p class="banner-title2">Thousands more fun!</p>
+                <p class="banner-p">
+                    Having a pet means you have more joy, a new friend, a happy person who will
+                    always be with you to have fun. We have 200+ different pets that can meet
+                    your needs!
+                </p>
+                <div>
+
+                    <button type="button" class="transparent-button pointer">View Intro
+                        <?php
+                        if ($video_icon) :
+                        ?>
+                            <img src="<?php echo $video_icon['url']; ?>" alt="<?php echo $video_icon['alt']; ?>" title="<?php echo $video_icon['title']; ?>">
+                        <?php endif; ?>
+
+                    </button>
+                    <button type="button" class="blue-button2 pointer">Explore Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section-pets-grid-4-2">
+
+        <?php
+        $arrow_right = get_field('arrow_right', 'options');
+        ?>
+
+        <p class="title-p">Hard to choose right products for your pets?</p>
+        <div class="block-header">
+            <h3>Our Products</h3>
+            <button type="button" class="transparent-button2 pointer button-with-icon">
+                <span>View more</span>
+                <?php
+                if ($arrow_right) {
+                ?>
+                    <img class="padding-left-10" src="<?php echo $arrow_right['url']; ?>" alt="<?php echo $arrow_right['alt']; ?>" title="<?php echo $arrow_right['title']; ?>">
+                <?php
+                }
+                ?>
+            </button>
+        </div>
+
+        <?php get_template_part('templates/block', 'goods-two-rows'); ?>
+
+    </section>
+
+
+    <section class="section-pets-grid-4-2">
+
+        <?php
+        $arrow_right = get_field('arrow_right', 'options');
+        ?>
+
+
+        <div class="block-header">
+            <div class="inline-text">
+                <p class="title-p">Proud to be part of</p>
+                <h3 class="padding-left-10">Pet Sellers</h3>
+            </div>
+            <button type="button" class="transparent-button2 pointer button-with-icon">
+                <span>View all our sellers</span>
+                <?php
+                if ($arrow_right) {
+                ?>
+                    <img class="padding-left-10" src="<?php echo $arrow_right['url']; ?>" alt="<?php echo $arrow_right['alt']; ?>" title="<?php echo $arrow_right['title']; ?>">
+                <?php
+                }
+                ?>
+            </button>
+        </div>
+
+        <div class="flex-list">
+            <?php
+            $sellers = get_field('sellers_list');
+
+            if ($sellers) :
+                foreach ($sellers as $seller) {
+
+                    $image = $seller['sellers_image'];
+
+                    if ($image) {
+                    echo '<img src="'. $image['url'].'" alt="'. $image['alt'].'" title="'. $image['title'].'">';
+                    }
+                }
+            endif;
+            ?>
+        </div>
+
+
+    </section>
+
 </div>
 
 

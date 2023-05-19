@@ -37,14 +37,37 @@ h2 {
     line-height: 60px;
 }
 
+h3 {
+    font-family: $bold_font;
+    font-size: 24px;
+    line-height: 36px;
+}
+
 p {
     font-family: $reg_font;
     font-size: 16px;
     line-height: 24px;
 }
 
+.title-p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $origin_black;
+}
+
 .bold {
     font-family: $bold_font;
+}
+
+.regular {
+    font-family: $reg_font;
+}
+
+.block-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 28px;
 }
 
 
@@ -57,12 +80,33 @@ p {
     font-size: 16px;
     color: $dark_white;
     font-family: $bold_font;
+    border: 1.5px solid $dark_blue;
     border: none;
     transition: $_1s;
     
-
     &:hover {
         background-color: $orange;
+
+    }
+
+    &:active {
+        color: $dark_white;
+        background-color: $dark_blue;
+    }
+}
+
+.blue-button2 {
+
+    @extend .blue-button;
+
+    font-family: $reg_font;
+    border: 1.5px solid transparent;
+    
+
+    &:hover {
+        background-color: $light_gray;
+        color: $dark_blue;
+        border: 1.5px solid $dark_blue;
 
     }
 
@@ -93,6 +137,27 @@ p {
     }
 }
 
+.transparent-button2 {
+
+    @extend .transparent-button;
+
+    &:hover {
+        background-color: $light_gray;
+        border: 1.5px solid $dark_blue;
+    }
+
+    &:active {
+        background-color: transparent;
+    }
+}
+
+.button-with-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
 .padding-left-5 {
     padding-left: 5px;
 }
@@ -103,6 +168,45 @@ p {
 
 .padding-right-10 {
     padding-right: 10px;
+}
+
+.banner-title1 {
+    font-family: $bold_font;
+    font-size: 52px;
+    line-height: 68px;
+    color: $dark_blue;
+}
+
+.banner-title2 {
+    font-family: $bold_font;
+    font-size: 36px;
+    line-height: 54px;
+    color: $dark_blue;
+}
+
+.gift-banner {
+    margin-top: 10px;
+    background-color: $beige;
+    border-radius: 8px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $bold_font;
+    color: $more_dark_blue;
+
+}
+
+.inline-text {
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
