@@ -1,0 +1,91 @@
+.footer-banner {
+  background-color: #FCEED5;
+  border-radius: 40px 40px 0px 0px;
+  padding-top: 80px;
+  padding-bottom: 50px; }
+
+.footer-links {
+  padding: 40px 0;
+  border-bottom: 1px solid #667479;
+  display: flex;
+  justify-content: space-between; }
+
+#menu-footer-menu {
+  display: flex;
+  gap: 25%; }
+  #menu-footer-menu a {
+    color: #00171F;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "SVN-Gilroy Bold";
+    transition: 1s; }
+    #menu-footer-menu a:hover {
+      color: #FFB775; }
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px; }
+  .footer-bottom-content img {
+    transition: 1s; }
+    .footer-bottom-content img:hover {
+      transform: scale(1.1); }
+  .footer-bottom-content p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #667479; }
+
+.footer-form-container {
+  padding: 32px;
+  background-color: #003459;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between; }
+  .footer-form-container h4 {
+    color: white;
+    text-transform: capitalize;
+    width: 30%; }
+  .footer-form-container form {
+    width: 60%;
+    padding: 12px;
+    background-color: white;
+    border-radius: 14px;
+    display: flex; }
+    .footer-form-container form input {
+      border: 1px solid #99A2A5;
+      padding: 14px 28px;
+      border-radius: 8px;
+      width: 100%; }
+      .footer-form-container form input::placeholder {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: "SVN-Gilroy Light";
+        color: #667479; }
+    .footer-form-container form button {
+      margin-left: 12px;
+      width: max-content;
+      min-width: 150px;
+      background-color: #003459;
+      border-radius: 8px;
+      color: white;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 100%;
+      transition: 1s;
+      border: none;
+      cursor: pointer; }
+      .footer-form-container form button:hover {
+        background-color: #667479; }
+
+.footer-links-social-medias {
+  display: flex;
+  gap: 40px; }
+  .footer-links-social-medias a {
+    color: #00171F;
+    transition: 1s; }
+    .footer-links-social-medias a:hover {
+      color: #FFB775; }
+  .footer-links-social-medias i {
+    font-size: 24px; }
+
+/*# sourceMappingURL=footer.css.map */
