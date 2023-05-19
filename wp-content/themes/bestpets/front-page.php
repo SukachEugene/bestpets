@@ -319,7 +319,7 @@ get_header()
 
     </section>
 
-    <section class="blog-posts">
+    <section class="blog-posts margin-bottom-60">
 
         <?php
         $arrow_right = get_field('arrow_right', 'options');
@@ -340,7 +340,70 @@ get_header()
             </button>
         </div>
 
-       
+        <div class="grid-3">
+
+            <?php
+
+            $posts = get_field('posts_for_show');
+
+
+            foreach ($posts as $post) :
+
+                $post_id = $post->ID;
+                $image = get_the_post_thumbnail($post_id);
+                $tags = get_the_tags($post_id);
+                $title = $post->post_title;
+
+                $excerpt = $post->post_excerpt;
+                $excerpt = wp_trim_words($excerpt, 20, '...');
+                $link = get_the_permalink($post_id);
+            ?>
+
+                <div class="blog-post">
+
+                    <?php
+
+
+                    if (!empty($image)) {
+                        echo $image;
+                    }
+
+
+                    if ($tags) {
+                    ?>
+                        <div class='blog-post-tags-container'>
+                            <?php
+                            foreach ($tags as $tag) {
+                                $tagname = $tag->name;
+                                echo '<div class="tag-name">' . $tagname . '</div>';
+                            }
+                            ?>
+                        </div>
+                    <?php
+                    }
+
+                    ?>
+
+                    <div class="blog-post-text-container">
+                        <?php
+                        echo '<a class="post-title" href="' . $link . '">' . $title . '</a>';
+
+                        echo '<div class="post-excerpt">' . $excerpt . '</div>';
+
+                        ?>
+
+                    </div>
+                </div>
+
+            <?php
+
+
+            endforeach;
+            ?>
+
+        </div>
+
+
 
     </section>
 

@@ -34,3 +34,43 @@ Stack trace:
 #7 {main}
   thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\templates\block-pets-two-rows.php on line 71
 
+2023-05-19T09:36:37+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:351
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 351
+
+2023-05-19T09:37:34+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Post as array in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:349
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 349
+
+2023-05-19T09:44:36+00:00 CRITICAL Uncaught Error: Call to undefined function get_excerpt() in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:354
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 354
+
+2023-05-19T09:51:12+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:370
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 370
+
+2023-05-19T09:51:58+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Term as array in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php:370
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\front-page.php on line 370
+
