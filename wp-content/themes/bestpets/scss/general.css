@@ -187,9 +187,9 @@ body {
       .head-banner .head-banner-content .head-banner-content-text p {
         color: #002A48;
         margin-bottom: 34px; }
-      .head-banner .head-banner-content .head-banner-content-text .transparent-button, .head-banner .head-banner-content .head-banner-content-text .transparent-button2 {
+      .head-banner .head-banner-content .head-banner-content-text .transparent-button, .head-banner .head-banner-content .head-banner-content-text .transparent-button2, .head-banner .head-banner-content .head-banner-content-text .transparent-button3 {
         margin-right: 20px; }
-        .head-banner .head-banner-content .head-banner-content-text .transparent-button img, .head-banner .head-banner-content .head-banner-content-text .transparent-button2 img {
+        .head-banner .head-banner-content .head-banner-content-text .transparent-button img, .head-banner .head-banner-content .head-banner-content-text .transparent-button2 img, .head-banner .head-banner-content .head-banner-content-text .transparent-button3 img {
           vertical-align: middle;
           margin-left: 11px;
           width: 18px;
@@ -305,9 +305,9 @@ body {
   border-radius: 20px;
   border: none;
   overflow: hidden; }
-  .middle-banner .transparent-button, .middle-banner .transparent-button2 {
+  .middle-banner .transparent-button, .middle-banner .transparent-button2, .middle-banner .transparent-button3 {
     margin-right: 20px; }
-    .middle-banner .transparent-button img, .middle-banner .transparent-button2 img {
+    .middle-banner .transparent-button img, .middle-banner .transparent-button2 img, .middle-banner .transparent-button3 img {
       vertical-align: middle;
       margin-left: 11px;
       width: 18px;
@@ -357,9 +357,9 @@ body {
   border-radius: 20px;
   border: none;
   overflow: hidden; }
-  .middle-banner-type2 .transparent-button, .middle-banner-type2 .transparent-button2 {
+  .middle-banner-type2 .transparent-button, .middle-banner-type2 .transparent-button2, .middle-banner-type2 .transparent-button3 {
     margin-right: 20px; }
-    .middle-banner-type2 .transparent-button img, .middle-banner-type2 .transparent-button2 img {
+    .middle-banner-type2 .transparent-button img, .middle-banner-type2 .transparent-button2 img, .middle-banner-type2 .transparent-button3 img {
       vertical-align: middle;
       margin-left: 11px;
       width: 18px;
@@ -438,6 +438,79 @@ body {
       color: #667479; }
   .blog-post .post-excerpt {
     padding-top: 6px; }
+
+.shop-top-banner {
+  margin-top: 110px; }
+  .shop-top-banner .breadcrumb {
+    font-family: "SVN-Gilroy Light";
+    font-size: 14px;
+    line-height: 20px;
+    color: #667479;
+    padding-bottom: 11px; }
+    .shop-top-banner .breadcrumb img {
+      padding: 0 16px; }
+    .shop-top-banner .breadcrumb a {
+      color: #667479; }
+
+.shop-top-banner-content {
+  background-color: #FCEED5;
+  display: flex;
+  position: relative;
+  padding-top: 64px;
+  padding-right: 85px;
+  border-radius: 20px;
+  overflow: hidden; }
+  .shop-top-banner-content p {
+    color: white;
+    text-align: right; }
+  .shop-top-banner-content .shop-top-banner-content-text {
+    position: relative;
+    z-index: 10; }
+    .shop-top-banner-content .shop-top-banner-content-text .banner-title2 {
+      padding-top: 2px;
+      padding-bottom: 6px; }
+    .shop-top-banner-content .shop-top-banner-content-text .banner-p {
+      margin-left: 15%;
+      width: 85%;
+      color: #CCD1D2;
+      font-size: 12px;
+      line-height: 18px;
+      padding-bottom: 24px; }
+    .shop-top-banner-content .shop-top-banner-content-text div {
+      text-align: right; }
+
+#shop-top-banner-figure1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 100%; }
+
+.shop-top-banner-image {
+  position: relative;
+  z-index: 5;
+  margin-left: 51px;
+  width: 55%;
+  margin-bottom: -1px; }
+
+.shop-top-banner-buttons-container {
+  display: flex;
+  justify-content: right;
+  gap: 20px; }
+
+.pets-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5vw;
+  row-gap: 2.5vw;
+  width: 75%; }
+
+.shop-filter {
+  width: 25%; }
+
+.shop-products-layout {
+  display: flex;
+  gap: 20px; }
 
 body {
   font-family: "SVN-Gilroy Light"; }
@@ -527,7 +600,23 @@ p {
     color: #FDFDFD;
     background-color: #003459; }
 
-.transparent-button, .transparent-button2 {
+.white-button {
+  padding: 10px 28px;
+  background: white;
+  border-radius: 57px;
+  font-size: 16px;
+  color: #00171F;
+  font-family: "SVN-Gilroy Light";
+  border: 1.5px solid white;
+  transition: 1s; }
+  .white-button:hover {
+    background-color: #FFB775;
+    border: 1.5px solid #FFB775; }
+  .white-button:active {
+    background-color: white;
+    border: 1.5px solid white; }
+
+.transparent-button, .transparent-button2, .transparent-button3 {
   padding: 10px 28px;
   border-radius: 57px;
   background-color: transparent;
@@ -536,10 +625,10 @@ p {
   font-family: "SVN-Gilroy Light";
   border: 1.5px solid #003459;
   transition: 1s; }
-  .transparent-button:hover, .transparent-button2:hover {
+  .transparent-button:hover, .transparent-button2:hover, .transparent-button3:hover {
     background-color: #FFB775;
     border: 1.5px solid #FFB775; }
-  .transparent-button:active, .transparent-button2:active {
+  .transparent-button:active, .transparent-button2:active, .transparent-button3:active {
     background-color: transparent;
     border: 1.5px solid #003459; }
 
@@ -548,6 +637,19 @@ p {
   border: 1.5px solid #003459; }
 .transparent-button2:active {
   background-color: transparent; }
+
+.transparent-button3 {
+  color: white;
+  border-color: white; }
+  .transparent-button3 img {
+    vertical-align: middle;
+    padding-left: 8px;
+    padding-bottom: 2px; }
+  .transparent-button3:hover {
+    background-color: #667479;
+    border: 1.5px solid #003459; }
+  .transparent-button3:active {
+    background-color: transparent; }
 
 .button-with-icon {
   display: flex;
@@ -565,6 +667,9 @@ p {
 
 .padding-rigt-30 {
   padding-right: 30px; }
+
+.margin-bottom-35 {
+  margin-bottom: 35px; }
 
 .margin-bottom-50 {
   margin-bottom: 50px; }

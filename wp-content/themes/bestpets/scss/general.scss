@@ -3,6 +3,7 @@
 @import 'header.scss';
 @import 'footer.scss';
 @import 'front-page';
+@import 'shop';
 
 
 // body, html {
@@ -130,6 +131,28 @@ p {
     }
 }
 
+.white-button {
+    padding: 10px 28px;
+    background: $white;
+    border-radius: 57px;
+    font-size: 16px;
+    color: $black;
+    font-family: $reg_font;
+    border: 1.5px solid $white;
+    transition: $_1s;
+    
+    &:hover {
+        background-color: $orange;
+        border: 1.5px solid $orange;
+    }
+
+    &:active {
+        background-color: $white;
+        border: 1.5px solid $white;
+    }
+
+}
+
 .transparent-button {
     padding: 10px 28px;
     border-radius: 57px;
@@ -165,6 +188,28 @@ p {
     }
 }
 
+.transparent-button3 {
+
+    @extend .transparent-button;
+    color: $white;
+    border-color: $white;
+
+    img {
+        vertical-align: middle;
+        padding-left: 8px;
+        padding-bottom: 2px;
+    }
+
+    &:hover {
+        background-color: $grey;
+        border: 1.5px solid $dark_blue;
+    }
+
+    &:active {
+        background-color: transparent;
+    }
+}
+
 .button-with-icon {
     display: flex;
     justify-content: space-between;
@@ -186,6 +231,10 @@ p {
 
 .padding-rigt-30 {
     padding-right: 30px;
+}
+
+.margin-bottom-35 {
+    margin-bottom: 35px;
 }
 
 .margin-bottom-50 {
