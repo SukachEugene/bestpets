@@ -1,0 +1,12 @@
+2023-05-22T07:03:18+00:00 CRITICAL Cannot redeclare WC() (previously declared in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\plugins\woocommerce\woocommerce.php:47) in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\woocommerce.php on line 46
+
+2023-05-22T09:33:41+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\woocommerce\archive-product.php on line 116
+
+2023-05-22T12:16:52+00:00 CRITICAL Uncaught Error: Call to undefined function wp_get_template_part() in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\woocommerce\archive-product.php:96
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\sukachy\Local Sites\bestpets\app\public\wp-blog-header.php(19): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\bestpets\app\public\index.php(17): require('C:\\Users\\sukach...')
+#3 {main}
+  thrown in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\woocommerce\archive-product.php on line 96
+

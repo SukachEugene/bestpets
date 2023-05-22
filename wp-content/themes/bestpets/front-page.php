@@ -107,7 +107,7 @@ get_header()
         <p class="title-p">Whats new?</p>
         <div class="block-header">
             <h3>Take a look at some of our pets</h3>
-            <button type="button" class="transparent-button2 pointer button-with-icon">
+            <a href="<?php echo get_home_url() . '/shop' ?>" class="transparent-button2 pointer button-with-icon">
                 <span>View more</span>
                 <?php
                 if ($arrow_right) {
@@ -116,7 +116,7 @@ get_header()
                 <?php
                 }
                 ?>
-            </button>
+            </a>
         </div>
 
         <?php get_template_part('templates/block', 'pets-two-rows'); ?>

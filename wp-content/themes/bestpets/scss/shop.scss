@@ -1,0 +1,100 @@
+.shop-top-banner {
+    margin-top: 110px;
+    
+
+    .breadcrumb {
+        font-family: $reg_font;
+        font-size: 14px;
+        line-height: 20px;
+        color: $grey;
+        padding-bottom: 11px;
+
+        img {
+            padding: 0 16px;
+        }
+
+        a {
+            color: $grey;
+        }
+
+
+    }
+}
+
+.shop-top-banner-content {
+    background-color: $beige;
+    display: flex;
+    position: relative;
+    padding-top: 64px;
+    padding-right: 85px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    p {
+        color: $white;
+        text-align: right;
+    }
+
+    .shop-top-banner-content-text {
+        position: relative;
+        z-index: 10;
+
+        .banner-title2 {
+            padding-top: 2px;
+            padding-bottom: 6px;
+        }
+
+        .banner-p {
+            margin-left: 15%;
+            width: 85%;
+            color: #CCD1D2;
+            font-size: 12px;
+            line-height: 18px;
+            padding-bottom: 24px;
+        }
+
+        div {
+            text-align: right;
+        }
+    }
+}
+
+#shop-top-banner-figure1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: 100%;
+}
+
+.shop-top-banner-image {
+    position: relative;
+    z-index: 5;
+    margin-left: 51px;
+    width: 55%;
+    margin-bottom: -1px;
+}
+
+.shop-top-banner-buttons-container {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+
+.pets-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.5vw;
+    row-gap: 2.5vw;
+    width: 75%;
+}
+
+.shop-filter {
+    width: 25%;
+}
+
+.shop-products-layout {
+    display: flex;
+    gap: 20px;
+}

@@ -115,6 +115,19 @@ function theme_features()
 
 
 
+
+// add WooCommerce theme support
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+   add_theme_support( 'woocommerce' );
+}  
+
+// disabled default WooCommerce styles
+if (class_exists('Woocommerce')){
+  add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+}
+
+
 // fix Woo Commerce .svg bug
 add_filter('woocommerce_resize_images', static function() {
     return false;
