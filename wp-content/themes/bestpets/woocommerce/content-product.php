@@ -49,6 +49,7 @@ $add_to_cart_text = $product->add_to_cart_text();
             
             echo '<div class="bold pet-price-container">' . $formatted_price . ' UAH <a href="' . esc_url($add_to_cart_url) . '" data-quantity="1" class="take-button">TAKE</a></div>';
 
+            // do_action('woocommerce_after_shop_loop_item');
             // echo '';
             
             ?>
