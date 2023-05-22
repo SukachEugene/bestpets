@@ -134,4 +134,20 @@ add_filter('woocommerce_resize_images', static function() {
 });
 
 
+
+
+function custom_woocommerce_pagination_args( $args ) {
+  // Змініть аргументи пагінації за вашими потребами
+  $args['prev_text'] = '&larr;'; // Текст для попередньої сторінки
+  $args['next_text'] = '&rarr;'; // Текст для наступної сторінки
+  $args['end_size'] = 1; // Кількість сторінок з кожного кінця
+  $args['mid_size'] = 1;
+
+  // Поверніть змінені аргументи
+  return $args;
+}
+add_filter( 'woocommerce_pagination_args', 'custom_woocommerce_pagination_args' );
+
+
+
 ?>
