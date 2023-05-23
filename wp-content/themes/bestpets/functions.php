@@ -141,13 +141,35 @@ function custom_woocommerce_pagination_args( $args ) {
   $args['prev_text'] = '&larr;'; // Текст для попередньої сторінки
   $args['next_text'] = '&rarr;'; // Текст для наступної сторінки
   $args['end_size'] = 1; // Кількість сторінок з кожного кінця
-  $args['mid_size'] = 1;
+  $args['mid_size'] = 0;
 
   // Поверніть змінені аргументи
   return $args;
 }
 add_filter( 'woocommerce_pagination_args', 'custom_woocommerce_pagination_args' );
 
+
+
+
+// add_filter( 'loop_shop_per_page', 'test', 20 );
+  
+// function test( $per_page ) {
+//     $per_page = 3;
+//     return $per_page;
+// }
+
+
+/**
+ * Change number of products that are displayed per page (shop page)
+ */
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+
+function new_loop_shop_per_page( $cols ) {
+  // $cols contains the current number of products per page based on the value stored on Options –> Reading
+  // Return the number of products you wanna show per page.
+  $cols = 3;
+  return $cols;
+}
 
 
 ?>
