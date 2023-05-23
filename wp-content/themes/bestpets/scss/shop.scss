@@ -98,3 +98,115 @@
     display: flex;
     gap: 20px;
 }
+
+.pet-single-product-card {
+    position: relative;
+    z-index: 5;
+    height: fit-content;
+}
+
+.fa.fa-minus.wpfTitleToggle {
+    display: none;
+}
+
+.wpfFilterTitle {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $bold_font;
+    color: $black;
+}
+
+#wpfBlock_1 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.wpfFilterTaxNameWrapper {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $reg_font;
+    color: $black;
+}
+
+.wpfCheckbox input {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #CCD1D2;
+    border-radius: 4px;
+}
+
+.shop-products-layout-head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+
+    .woocommerce-ordering {
+        
+        select {
+            font-family: $reg_font;
+            font-size: 14px;
+            line-height: 20px;
+            color: $grey;
+            padding: 8px 12px;
+            border: 2px solid $light_gray;
+            border-radius: 16px;
+            
+            &::after {
+                width: 10px;
+                content: '';
+            }
+        }
+    }
+
+    .shop-products-layout-head-title-filter {
+        width: calc(25% + 20px);
+    }
+
+    .shop-products-layout-head-sorting {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .woocommerce-result-count{
+            display: block;
+            width: fit-content;
+            order: -1;
+        }
+        
+    }
+
+
+}
+
+
+.woocommerce-ordering {
+    text-align: right;
+    vertical-align: top;
+}
+
+.woocommerce-pagination.berocket_pagination {
+
+    .page-numbers {
+        font-size: 18px;
+        line-height: 24px;
+        font-family: $bold_font;
+        display: inline-block;
+        padding: 6px 13px !important;
+    }
+
+    .next a,  .prev a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 9px !important;
+
+    }
+    .fa {
+        font-size: 15px;
+    }
+}

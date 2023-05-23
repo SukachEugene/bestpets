@@ -1,0 +1,4 @@
+2023-05-23T11:38:03+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\woocommerce\content-product.php on line 41
+
+2023-05-23T11:57:50+00:00 CRITICAL syntax error, unexpected token "}" in C:\Users\sukachy\Local Sites\bestpets\app\public\wp-content\themes\bestpets\woocommerce\archive-product.php on line 161
+

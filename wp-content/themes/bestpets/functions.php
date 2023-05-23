@@ -159,17 +159,29 @@ add_filter( 'woocommerce_pagination_args', 'custom_woocommerce_pagination_args' 
 // }
 
 
-/**
- * Change number of products that are displayed per page (shop page)
- */
-add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
-function new_loop_shop_per_page( $cols ) {
-  // $cols contains the current number of products per page based on the value stored on Options –> Reading
-  // Return the number of products you wanna show per page.
-  $cols = 3;
-  return $cols;
+
+
+// Change the Number of WooCommerce Products Displayed Per Page
+add_filter( 'loop_shop_per_page', 'lw_loop_shop_per_page', 30 );
+
+function lw_loop_shop_per_page( $products ) {
+ $products = 3;
+ return $products;
 }
+
+
+// custom sorting select text
+function custom_woocommerce_catalog_orderby( $orderby_options ) {
+  $orderby_options['menu_order'] = __( 'Default sorting', 'woocommerce' );
+  $orderby_options['popularity'] = __( 'Sort by: Popular', 'woocommerce' );
+  $orderby_options['rating'] = __( 'Sort by: Average rating', 'woocommerce' );
+  $orderby_options['date'] = __( 'Sort by: Latest', 'woocommerce' );
+  $orderby_options['price'] = __( 'Sort by price: Low to high', 'woocommerce' );
+  $orderby_options['price-desc'] = __( 'Sort by price: High to low', 'woocommerce' );
+  return $orderby_options;
+}
+add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
 
 
 ?>
