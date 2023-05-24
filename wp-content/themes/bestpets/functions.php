@@ -166,9 +166,10 @@ add_filter( 'woocommerce_pagination_args', 'custom_woocommerce_pagination_args' 
 add_filter( 'loop_shop_per_page', 'lw_loop_shop_per_page', 30 );
 
 function lw_loop_shop_per_page( $products ) {
- $products = 3;
+ $products = 6;
  return $products;
 }
+
 
 
 // custom sorting select text

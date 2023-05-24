@@ -81,13 +81,16 @@
     gap: 20px;
 }
 
+.products {
+    width: 75%;
+}
 
 .pets-grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2.5vw;
     row-gap: 2.5vw;
-    width: 75%;
+    width: 100%;
 }
 
 .shop-filter {
@@ -145,7 +148,7 @@
     margin-bottom: 14px;
 
     .woocommerce-ordering {
-        
+
         select {
             font-family: $reg_font;
             font-size: 14px;

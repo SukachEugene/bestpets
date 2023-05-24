@@ -75,60 +75,96 @@ get_header()
                 <div class="shop-products-layout-head-title-filter">Filter</div>
 
                 <div class="shop-products-layout-head-sorting">
-                <?php
-                do_action('woocommerce_before_shop_loop');
-                ?>
+                    <?php
+                    do_action('woocommerce_before_shop_loop');
+                    ?>
                 </div>
 
             </div>
 
             <?php
 
-                // woocommerce_product_loop_start();
-                ?>
-                <div class="shop-products-layout">
-                    <div class="shop-filter">
-                        <?php
-                        echo do_shortcode('[wpf-filters id=1]');
+            // woocommerce_product_loop_start();
+            ?>
+            <div class="shop-products-layout">
+                <div class="shop-filter">
+                    <?php
+                    echo do_shortcode('[wpf-filters id=1]');
+                   
 
-                        ?>
-                    </div>
-                    <div class="pets-grid-3">
-                        <?php
-
-                        if (wc_get_loop_prop('total')) {
-                            while (have_posts()) {
-                                the_post();
-
-                                do_action('woocommerce_shop_loop');
-
-                                wc_get_template_part('content', 'product');
-
-                                // // Оgrt products categories
-                                // $product_categories = get_the_terms(get_the_ID(), 'product_cat');
-
-                                // // check and define specific category
-                                // if ($product_categories && !is_wp_error($product_categories)) {
-                                //     foreach ($product_categories as $category) {
-                                //         if ($category->slug === 'pets') {
-
-                                //             // do_action('woocommerce_shop_loop');
-
-
-
-                                //             wc_get_template_part('content', 'product');
-                                //             // exit if specific category was found
-                                //             break;
-                                //         }
-                                //     }
-                                // }
-                                
-                            }
-                        }
-                        ?>
-                    </div>
+                    ?>
                 </div>
-            <?php
+
+                <?php
+                 woocommerce_product_loop_start();
+                 ?>
+
+                <div class="pets-grid-3">
+                    <?php
+
+
+                    // $args = array(
+                    //     'post_type' => 'product',
+                    //     'posts_per_page' => 2
+                    //     );
+                    // $loop = new WP_Query( $args );
+                    // if ( $loop->have_posts() ) {
+                    //     while ( $loop->have_posts() ) : $loop->the_post();
+                    //         wc_get_template_part( 'content', 'product' );
+                    //     endwhile;
+                    // } else {
+                    //     echo __( 'No products found' );
+                    // }
+                    // wp_reset_postdata();
+
+
+
+
+                
+                    // if (wc_get_loop_prop('total')) {
+                    //     while (have_posts()) {
+                    //         the_post();
+
+                    //         do_action('woocommerce_shop_loop');
+
+                    //         wc_get_template_part('content', 'product');
+                    //     }
+                    // }
+
+
+
+
+
+                    if (wc_get_loop_prop('total')) {
+
+                        while (have_posts()) {
+                            the_post();
+
+                            // Оgrt products categories
+                            $product_categories = get_the_terms(get_the_ID(), 'product_cat');
+
+                            // check and define specific category
+                            if ($product_categories && !is_wp_error($product_categories)) {
+                                foreach ($product_categories as $category) {
+                                    if ($category->slug === 'pets') {
+
+                                        do_action('woocommerce_shop_loop');
+
+
+
+                                        wc_get_template_part('content', 'product');
+                                        // exit if specific category was found
+                                        break;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        <?php
 
             woocommerce_product_loop_end();
 
@@ -160,10 +196,10 @@ get_header()
             do_action('woocommerce_no_products_found');
         }
 
-            ?>
+        ?>
 
     </section>
-    
+
 
 </div>
 

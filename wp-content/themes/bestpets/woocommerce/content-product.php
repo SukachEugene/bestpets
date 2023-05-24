@@ -3,7 +3,7 @@
 global $product;
 
 
-if ( empty( $product ) || ! $product->is_visible() || ! has_term( 'pets', 'product_cat', $product->get_id() )) {
+if ( empty( $product ) || ! $product->is_visible()) {
 	return;
 }
 
