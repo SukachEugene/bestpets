@@ -11,6 +11,11 @@ window.onload = function () {
 
 function addEventListeners() {
  window.addEventListener('scroll', showHeader);
+ 
+ let filterButtons = document.getElementsByClassName('wpfButton');
+ for (i = 0; i < filterButtons.length; i++) {
+  filterButtons[i].addEventListener('click', refreshPage);
+ }
 
 }
 
@@ -23,6 +28,12 @@ function showHeader() {
     document.getElementById('searchform').classList.remove('bordered');
   }
 }
+
+function refreshPage() {
+  // location.reload();
+  console.log('click')
+}
+
 
 
 

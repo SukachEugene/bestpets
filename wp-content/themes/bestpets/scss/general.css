@@ -498,12 +498,15 @@ body {
   justify-content: right;
   gap: 20px; }
 
+.products {
+  width: 75%; }
+
 .pets-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2.5vw;
   row-gap: 2.5vw;
-  width: 75%; }
+  width: 100%; }
 
 .shop-filter {
   width: 25%; }
@@ -511,6 +514,106 @@ body {
 .shop-products-layout {
   display: flex;
   gap: 20px; }
+
+.pet-single-product-card {
+  position: relative;
+  z-index: 5;
+  height: fit-content; }
+
+.fa.fa-minus.wpfTitleToggle {
+  display: none; }
+
+.wpfFilterTitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "SVN-Gilroy Bold";
+  color: #00171F; }
+
+#wpfBlock_1 {
+  margin-top: 0;
+  padding-top: 0; }
+
+.wpfFilterTaxNameWrapper {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "SVN-Gilroy Light";
+  color: #00171F; }
+
+.wpfCheckbox input {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  border: 1px solid #CCD1D2;
+  border-radius: 4px; }
+
+.shop-products-layout-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px; }
+  .shop-products-layout-head .woocommerce-ordering select {
+    font-family: "SVN-Gilroy Light";
+    font-size: 14px;
+    line-height: 20px;
+    color: #667479;
+    padding: 8px 12px;
+    border: 2px solid lightgray;
+    border-radius: 16px; }
+    .shop-products-layout-head .woocommerce-ordering select::after {
+      width: 10px;
+      content: ''; }
+  .shop-products-layout-head .shop-products-layout-head-sorting {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .shop-products-layout-head .shop-products-layout-head-sorting .woocommerce-result-count {
+      display: block;
+      width: fit-content;
+      order: -1; }
+
+.filter-breed-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SVN-Gilroy Bold";
+  color: #003459;
+  margin-right: 14px;
+  text-transform: capitalize; }
+
+.shop-products-layout-head-title-filter {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "SVN-Gilroy Bold";
+  color: #003459;
+  width: calc(25% + 20px); }
+
+.filter-title-count {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "SVN-Gilroy Light";
+  color: #667479; }
+
+.woocommerce-ordering {
+  text-align: right;
+  vertical-align: top; }
+
+.woocommerce-pagination.berocket_pagination {
+  padding-left: 26% !important; }
+  .woocommerce-pagination.berocket_pagination .page-numbers {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "SVN-Gilroy Bold";
+    display: inline-block;
+    padding: 6px 13px !important; }
+  .woocommerce-pagination.berocket_pagination .next a, .woocommerce-pagination.berocket_pagination .prev a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 9px !important; }
+  .woocommerce-pagination.berocket_pagination .fa {
+    font-size: 15px; }
 
 body {
   font-family: "SVN-Gilroy Light"; }
@@ -560,6 +663,9 @@ p {
 
 .regular {
   font-family: "SVN-Gilroy Light"; }
+
+.lovercase-text {
+  text-transform: lowercase; }
 
 .block-header {
   display: flex;

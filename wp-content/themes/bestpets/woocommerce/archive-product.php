@@ -69,46 +69,47 @@ get_header()
 
         <?php
         if (woocommerce_product_loop()) {
+        ?>
 
+            <div class="shop-products-layout-head">
+                <div class="shop-products-layout-head-title-filter">Filter</div>
 
-            do_action('woocommerce_before_shop_loop');
+                <div class="shop-products-layout-head-sorting">
+                    <?php
+                    do_action('woocommerce_before_shop_loop');
+                    ?>
+                </div>
 
+            </div>
 
+            <?php
 
             // woocommerce_product_loop_start();
-        ?>
+            ?>
             <div class="shop-products-layout">
                 <div class="shop-filter">
                     <?php
                     echo do_shortcode('[wpf-filters id=1]');
+                   
 
                     ?>
                 </div>
+
+                <?php
+                 woocommerce_product_loop_start();
+                 ?>
+
                 <div class="pets-grid-3">
                     <?php
 
                     if (wc_get_loop_prop('total')) {
+
                         while (have_posts()) {
                             the_post();
 
-                            // Оgrt products categories
-                            $product_categories = get_the_terms(get_the_ID(), 'product_cat');
+                            do_action('woocommerce_shop_loop');
 
-                            // check and define specific category
-                            if ($product_categories && !is_wp_error($product_categories)) {
-                                foreach ($product_categories as $category) {
-                                    if ($category->slug === 'pets') {
-
-                                        do_action('woocommerce_shop_loop');
-
-
-
-                                        wc_get_template_part('content', 'product');
-                                        // exit if specific category was found
-                                        break;
-                                    }
-                                }
-                            }
+                            wc_get_template_part('content', 'product');
                         }
                     }
                     ?>
@@ -117,28 +118,6 @@ get_header()
         <?php
 
             woocommerce_product_loop_end();
-
-
-
-
-
-            // woocommerce_product_loop_start();
-
-            // if (wc_get_loop_prop('total')) {
-            //     while (have_posts()) {
-            //         the_post();
-
-            //         do_action('woocommerce_shop_loop');
-
-            //         wc_get_template_part('content', 'product');
-            //     }
-            // }
-
-            // woocommerce_product_loop_end();
-
-
-
-
 
             do_action('woocommerce_after_shop_loop');
         } else {
@@ -149,6 +128,7 @@ get_header()
         ?>
 
     </section>
+
 
 </div>
 

@@ -141,7 +141,7 @@ function custom_woocommerce_pagination_args( $args ) {
   $args['prev_text'] = '&larr;'; // Текст для попередньої сторінки
   $args['next_text'] = '&rarr;'; // Текст для наступної сторінки
   $args['end_size'] = 1; // Кількість сторінок з кожного кінця
-  $args['mid_size'] = 1;
+  $args['mid_size'] = 0;
 
   // Поверніть змінені аргументи
   return $args;
@@ -149,5 +149,65 @@ function custom_woocommerce_pagination_args( $args ) {
 add_filter( 'woocommerce_pagination_args', 'custom_woocommerce_pagination_args' );
 
 
+
+
+// add_filter( 'loop_shop_per_page', 'test', 20 );
+  
+// function test( $per_page ) {
+//     $per_page = 3;
+//     return $per_page;
+// }
+
+
+
+
+
+// Change the Number of WooCommerce Products Displayed Per Page
+add_filter( 'loop_shop_per_page', 'lw_loop_shop_per_page', 30 );
+
+function lw_loop_shop_per_page( $products ) {
+ $products = 6;
+ return $products;
+}
+
+
+
+// custom sorting select text
+function custom_woocommerce_catalog_orderby( $orderby_options ) {
+  $orderby_options['menu_order'] = __( 'Default sorting', 'woocommerce' );
+  $orderby_options['popularity'] = __( 'Sort by: Popular', 'woocommerce' );
+  $orderby_options['rating'] = __( 'Sort by: Average rating', 'woocommerce' );
+  $orderby_options['date'] = __( 'Sort by: Latest', 'woocommerce' );
+  $orderby_options['price'] = __( 'Sort by price: Low to high', 'woocommerce' );
+  $orderby_options['price-desc'] = __( 'Sort by price: High to low', 'woocommerce' );
+  return $orderby_options;
+}
+add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
+
+
+// woocommerce product loop modification for select just pets
+function custom_shop_loop_query( $query ) {
+  if ( $query->is_main_query() && is_shop() ) {
+      $query->set( 'tax_query', array(
+          array(
+              'taxonomy' => 'product_cat',
+              'field'    => 'slug',
+              'terms'    => 'pets',
+          ),
+      ) );
+  }
+}
+add_action( 'pre_get_posts', 'custom_shop_loop_query' );
+
+
+function test() {
+  // Замініть 'Новий текст, який ви хочете вивести' на бажаний вами текст
+  $aaa = 'Новий текст, який ви хочете вивести';
+
+  return $aaa;
+}
+
+// Підключіть вашу функцію до фільтра 'woocommerce_result_count'
+add_filter('woocommerce_result_count', 'test');
 
 ?>

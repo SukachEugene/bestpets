@@ -19,11 +19,14 @@
 
 $pets = get_field('pets');
 
+
+
 ?>
 
 <div class="pets-grid-4-2">
 
     <?
+
     foreach ($pets as $pet) {
 
         $product_id = $pet->ID;
