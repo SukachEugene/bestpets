@@ -135,15 +135,14 @@ add_filter('woocommerce_resize_images', static function() {
 
 
 
-
+// create custom pagination
 function custom_woocommerce_pagination_args( $args ) {
-  // Змініть аргументи пагінації за вашими потребами
-  $args['prev_text'] = '&larr;'; // Текст для попередньої сторінки
-  $args['next_text'] = '&rarr;'; // Текст для наступної сторінки
-  $args['end_size'] = 1; // Кількість сторінок з кожного кінця
+
+  $args['prev_text'] = '&larr;'; 
+  $args['next_text'] = '&rarr;'; 
+  $args['end_size'] = 1;
   $args['mid_size'] = 0;
 
-  // Поверніть змінені аргументи
   return $args;
 }
 add_filter( 'woocommerce_pagination_args', 'custom_woocommerce_pagination_args' );
@@ -200,14 +199,6 @@ function custom_shop_loop_query( $query ) {
 add_action( 'pre_get_posts', 'custom_shop_loop_query' );
 
 
-function test() {
-  // Замініть 'Новий текст, який ви хочете вивести' на бажаний вами текст
-  $aaa = 'Новий текст, який ви хочете вивести';
 
-  return $aaa;
-}
-
-// Підключіть вашу функцію до фільтра 'woocommerce_result_count'
-add_filter('woocommerce_result_count', 'test');
 
 ?>
