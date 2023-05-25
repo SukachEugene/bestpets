@@ -71,6 +71,10 @@ p {
     font-family: $reg_font;
 }
 
+.lovercase-text {
+    text-transform: lowercase;
+}
+
 .block-header {
     display: flex;
     justify-content: space-between;

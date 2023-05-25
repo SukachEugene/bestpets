@@ -185,4 +185,29 @@ function custom_woocommerce_catalog_orderby( $orderby_options ) {
 add_filter( 'woocommerce_catalog_orderby', 'custom_woocommerce_catalog_orderby' );
 
 
+// woocommerce product loop modification for select just pets
+function custom_shop_loop_query( $query ) {
+  if ( $query->is_main_query() && is_shop() ) {
+      $query->set( 'tax_query', array(
+          array(
+              'taxonomy' => 'product_cat',
+              'field'    => 'slug',
+              'terms'    => 'pets',
+          ),
+      ) );
+  }
+}
+add_action( 'pre_get_posts', 'custom_shop_loop_query' );
+
+
+function test() {
+  // Замініть 'Новий текст, який ви хочете вивести' на бажаний вами текст
+  $aaa = 'Новий текст, який ви хочете вивести';
+
+  return $aaa;
+}
+
+// Підключіть вашу функцію до фільтра 'woocommerce_result_count'
+add_filter('woocommerce_result_count', 'test');
+
 ?>

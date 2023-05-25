@@ -102,63 +102,14 @@ get_header()
                 <div class="pets-grid-3">
                     <?php
 
-
-                    // $args = array(
-                    //     'post_type' => 'product',
-                    //     'posts_per_page' => 2
-                    //     );
-                    // $loop = new WP_Query( $args );
-                    // if ( $loop->have_posts() ) {
-                    //     while ( $loop->have_posts() ) : $loop->the_post();
-                    //         wc_get_template_part( 'content', 'product' );
-                    //     endwhile;
-                    // } else {
-                    //     echo __( 'No products found' );
-                    // }
-                    // wp_reset_postdata();
-
-
-
-
-                
-                    // if (wc_get_loop_prop('total')) {
-                    //     while (have_posts()) {
-                    //         the_post();
-
-                    //         do_action('woocommerce_shop_loop');
-
-                    //         wc_get_template_part('content', 'product');
-                    //     }
-                    // }
-
-
-
-
-
                     if (wc_get_loop_prop('total')) {
 
                         while (have_posts()) {
                             the_post();
 
-                            // Оgrt products categories
-                            $product_categories = get_the_terms(get_the_ID(), 'product_cat');
+                            do_action('woocommerce_shop_loop');
 
-                            // check and define specific category
-                            if ($product_categories && !is_wp_error($product_categories)) {
-                                foreach ($product_categories as $category) {
-                                    if ($category->slug === 'pets') {
-
-                                        do_action('woocommerce_shop_loop');
-
-
-
-                                        wc_get_template_part('content', 'product');
-                                        // exit if specific category was found
-                                        break;
-                                    }
-                                }
-                            }
-
+                            wc_get_template_part('content', 'product');
                         }
                     }
                     ?>
@@ -167,28 +118,6 @@ get_header()
         <?php
 
             woocommerce_product_loop_end();
-
-
-
-
-
-            // woocommerce_product_loop_start();
-
-            // if (wc_get_loop_prop('total')) {
-            //     while (have_posts()) {
-            //         the_post();
-
-            //         do_action('woocommerce_shop_loop');
-
-            //         wc_get_template_part('content', 'product');
-            //     }
-            // }
-
-            // woocommerce_product_loop_end();
-
-
-
-
 
             do_action('woocommerce_after_shop_loop');
         } else {

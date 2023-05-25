@@ -165,9 +165,7 @@
         }
     }
 
-    .shop-products-layout-head-title-filter {
-        width: calc(25% + 20px);
-    }
+
 
     .shop-products-layout-head-sorting {
         width: 75%;
@@ -183,7 +181,31 @@
         
     }
 
+}
 
+@mixin filter-title {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: $bold_font;
+    color: $dark_blue;
+}
+
+.filter-breed-title {
+    @include filter-title();
+    margin-right: 14px;
+    text-transform: capitalize
+}
+
+.shop-products-layout-head-title-filter {
+    @include filter-title();
+    width: calc(25% + 20px);
+}
+
+.filter-title-count {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $reg_font;
+    color: $grey;
 }
 
 
@@ -193,6 +215,8 @@
 }
 
 .woocommerce-pagination.berocket_pagination {
+
+    padding-left: 26% !important;
 
     .page-numbers {
         font-size: 18px;
