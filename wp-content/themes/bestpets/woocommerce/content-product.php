@@ -13,7 +13,7 @@ if ( empty( $product ) || ! $product->is_visible()) {
 
 // do_action( 'woocommerce_shop_loop_item_title' );
 
-$product_id = $product->id;
+$product_id = $product->get_id();
 
 $gene = $product->get_attribute('gene');
 $age = $product->get_attribute('age');
@@ -22,7 +22,7 @@ $price = $product->get_price();
 $formatted_price = number_format($price, 0, ',', '.');
 
 $product_image = get_the_post_thumbnail($product_id);
-$product_title = $product->name;
+$product_title = $product->get_name();
 $link = get_permalink($product_id);
 
 $add_to_cart_url = $product->add_to_cart_url();
